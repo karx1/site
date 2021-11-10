@@ -7,4 +7,35 @@
 
 body {
 	font-family: 'Ubuntu', sans-serif;
+	background: linear-gradient(180deg, #00d4ff, #091579);
+	color: white;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	filter: drop-shadow(2px 2px 2px black);
 }
+
+$linkcolor: #c256ff;
+
+@mixin linkstyle {
+	color: $linkcolor;
+	filter: none;
+}
+
+a:link {
+	@include linkstyle;
+}
+
+a:visited {
+	@include linkstyle;
+}
+
+a:hover {
+	@include linkstyle;
+	color: white;
+}
+
+a:active {
+	@include linkstyle;
+}
+
+hr { background-color: white; height: 1px; border: 0; }
