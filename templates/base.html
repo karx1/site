@@ -5,12 +5,19 @@
 	<meta charset="utf-8">
 	<title>Welcome to Yash's Website!</title>
 	<link rel="stylesheet" href="/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
 	<section class="section">
 		<div class="container">
 			{% block content %} {% endblock %}
+			<hr>
+			<div style="text-align: center">
+				<a href="/">home</a> - <a href="/projects/">projects</a> - built with <a href="https://www.getzola.org/">zola</a>
+			</div>
 		</div>
 	</section>
 </body>
