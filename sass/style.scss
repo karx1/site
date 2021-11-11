@@ -1,13 +1,14 @@
 .container {
 	/*Text margin*/
 	margin: auto;
-	width: 60%;
-	padding:  10px;
+	width: 75%;
+	padding: 10px;
 }
 
 body {
 	font-family: 'Ubuntu', sans-serif;
-	background: linear-gradient(180deg, #00d4ff, #091579);
+	background: linear-gradient(180deg, #091579, black);
+	// background: linear-gradient(180deg, #00d4ff, #091579);
 	color: white;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
