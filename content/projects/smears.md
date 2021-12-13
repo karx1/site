@@ -10,4 +10,4 @@ First, it takes an input image file and writes random chunks of it to new files.
 `SmeaRS` uses the [MozJPEG](https://github.com/mozilla/mozjpeg) compression algorithm so that the generated image files are written quickly and take up less space on the disk.
 
 Links:
-- [Source Code](https://git.karx.xyz/smears.git)
+- [Source Code](https://git.karx.xyz/karx/smears)
