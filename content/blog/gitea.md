@@ -76,11 +76,3 @@ That's it! The first user to register should automatically become an admin user 
 
 You should now be happily running a Gitea instance. If you have any questions, feel free to [shoot me an email](mailto:yashkarandikar158@gmail.com)!
 
-
-
-
-
-
-
-
-
