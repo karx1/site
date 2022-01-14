@@ -34,7 +34,7 @@ sudo -iu postgres
 Then, create the `gitea` database user and the `gitea` database. Gitea will take care of making tables and stuff.
 
 ```bash
-createuser -P gitea # you will be promped for a password
+createuser -P gitea # you will be promtped for a password
 createdb -O gitea gitea
 ```
 
