@@ -39,3 +39,9 @@ a:active {
 }
 
 hr { background-color: white; height: 1px; border: 0; }
+
+pre {
+	padding: 1em;
+	border: 0.5em;
+	overflow-x: scroll;
+}
