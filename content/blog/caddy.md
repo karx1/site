@@ -3,7 +3,7 @@ title = "Why I switched to Caddy"
 date = "2022-06-24" 
 +++
 
-A while back, I switched over from `nginx` to `caddy` to serve HTTP(S) websites.
+A while back, I switched over from [`nginx`](https://nginx.org/en/) to [`caddy`](https://caddyserver.com/) to serve HTTP(S) websites.
 
 ## What does caddy do differently?
 
