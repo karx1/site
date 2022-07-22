@@ -33,6 +33,6 @@ However, there are still a couple of things I still want to add, such as:
 
 For now, though, this site does everything I could ask for.
 
-This site's source code is avaiable [on my cgit](https://git.karx.xyz/site.git). If you are interested in contributing to this site, feel free to shoot me an email with an idea or a patch.
+This site's source code is avaiable [on my gitea](https://git.karx.xyz/karx/site). If you are interested in contributing to this site, feel free to shoot me an email with an idea or a patch.
 
 -- karx
