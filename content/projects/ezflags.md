@@ -7,5 +7,5 @@ date = "2020-01-14"
 
 Links:
 - [GitHub](https://github.com/karx1/ezflags)
-- [PYPI](https://pypi.org/projects/ezflags)
+- [PYPI](https://pypi.org/project/ezflags)
 
