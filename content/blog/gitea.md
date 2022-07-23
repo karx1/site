@@ -7,7 +7,7 @@ Over the past few days, I've been moving all the repos from my old git server to
 
 The reason for this was frankly because I am going to start looking for jobs soon and in my opinion, gitea is easier to navigate (and read source code on) than cgit for hiring teams and other non-technical people, especially if they have interacted with GitHub in the past.
 
-The process was extremely easy and quick. The only thing you need is a SQL (pronounced sequel) server, such as MariaDB/MySQL, PostgreSQL, and SQLite.
+The process was extremely easy and quick. The only thing you need is a SQL (pronounced sequel) server, such as MariaDB/MySQL, PostgreSQL, or SQLite.
 
 I used PostgreSQL because I already had a server running; information about other database backends can be found at [the ArchWiki](https://wiki.archlinux.org/title/Gitea).
 
