@@ -5,7 +5,7 @@ date = "2022-03-25"
 
 For the last couple of weeks, I've been working on developing [cat-box](https://crates.io/crates/cat-box/).
 
-I wrote this crate because frankly I was disappointed with bevy and I wanted something more similar to [python's `arcade` library](https://arcade.academy/) in the Rust ecosystem.
+I wrote this crate because frankly I was disappointed with [bevy](https://crates.io/crates/bevy) and I wanted something more similar to [python's `arcade` library](https://arcade.academy/) in the Rust ecosystem.
 
 The first thing I did was looking into various rendering backends. In the end, I settled on `SDL`, particularly the [sdl2](https://crates.io/crates/sdl2) crate for Rust, because I felt it was simple and lightweight.
 
