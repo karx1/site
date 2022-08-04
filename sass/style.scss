@@ -46,3 +46,18 @@ pre {
 	border: 0.5em;
 	overflow-x: scroll;
 }
+
+.warning {
+    background-color: indianred;
+    padding: 1em;
+}
+
+.warning::before {
+    content: '⚠ ';
+}
+
+code {
+    font-family: monospace;
+    background-color: #2b303b;
+    padding: 0.1em 0.2em;
+}
