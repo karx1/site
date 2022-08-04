@@ -47,6 +47,16 @@ pre {
 	overflow-x: scroll;
 }
 
+code {
+    font-family: monospace;
+    background-color: #2b303b;
+    padding: 0.1em 0.2em;
+}
+
+pre code {
+    padding-left: 0;
+}
+
 .warning {
     background-color: indianred;
     padding: 1em;
@@ -56,8 +66,3 @@ pre {
     content: '⚠ ';
 }
 
-code {
-    font-family: monospace;
-    background-color: #2b303b;
-    padding: 0.1em 0.2em;
-}
