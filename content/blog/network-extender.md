@@ -16,7 +16,9 @@ Just in case, you might also want to keep around a USB keyboard and an HDMI moni
 
 ### Switch to systemd-networkd
 
-<p class="warning">This setup <em>will</em> break any DNS servers already running on your Pi, such as Pi-Hole, so make sure you know what you're getting into.</p>
+{% alert(type="warning") %}
+This setup <em>will</em> break any DNS servers already running on your Pi, such as Pi-Hole, so make sure you know what you're getting into.
+{% end %}
 
 You need to be root for the whole guide, so either use `sudo -Es` or `sudo su` to switch to the root user.
 
@@ -65,7 +67,9 @@ network={
 }
 ```
 
-<p class="warning">Your password will be stored in <em>plain text</em> so make sure this file is not readable by anyone you don't want seeing the password.</p>
+{% alert(type="warning") %}
+Your password will be stored in <em>plain text</em> so make sure this file is not readable by anyone you don't want seeing the password
+{% end %}
 
 ### Setting up the bridge
 
