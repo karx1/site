@@ -1,3 +1,3 @@
 <p class="{{ type }}">
-{{ body | safe }}
+{{ body | markdown(inline=true) | safe }}
 </p>
