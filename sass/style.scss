@@ -49,12 +49,13 @@ pre {
 
 code {
     font-family: monospace;
-    background-color: #2b303b;
+    background-color: #2e3440;
     padding: 0.1em 0.2em;
 }
 
 pre code {
     padding-left: 0;
+    background-color: unset;
 }
 
 .warning {
