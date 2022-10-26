@@ -67,3 +67,31 @@ pre code {
     content: '⚠ ';
 }
 
+.info {
+    background-color: #1f44b4;
+    padding: 1em;
+}
+
+.info::before {
+    content: "ℹ "	
+}
+
+// images
+
+figure {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+figcaption {
+    text-align: right;
+    font-size: smaller;
+    font-style: italic;
+    color: #777;
+}
+
