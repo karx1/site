@@ -1,0 +1,9 @@
++++
+title = "wn2: WeeChat notification plugin"
+date = "2022-10-20"
++++
+
+wn2 is a notification plugin for WeeChat written in Rust. Requires `notify-send` and `weechat`.
+
+Links:
+- [Git](https://git.karx.xyz/karx/wn2)

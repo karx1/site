@@ -19,7 +19,7 @@ During the migration, I made a lot of decisions that other people would not have
 
 I, however, opted to roll my own CSS, simply because all the themes seemed too bland for me, and a lot of them were ones that I had seen in the wild (like the [juice](https://www.getzola.org/themes/juice/) theme that Trunk uses for their [website](https://trunkrs.dev/)). I wanted something that was unique and something that represented me (part of the reason I chose [TARDIS blue](https://encycolorpedia.com/003b6f) for the background gradient).
 
-Another thing was that the old site had varying formats for projects. For example, [SmeaRS](@/projects/smears.md) used to have its own, seperate project page, while all the others were just sections in the main page. With Zola, though, I had to make a seperate page for each project.
+Another thing was that the old site had varying formats for projects. For example, SmeaRS used to have its own, seperate project page, while all the others were just sections in the main page. With Zola, though, I had to make a seperate page for each project.
 
 ## After
 
