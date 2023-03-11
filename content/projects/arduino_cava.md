@@ -1,5 +1,6 @@
 +++
-title = "arduino_cava: visualize audio on an Arduino using cava"
+title = "arduino_cava"
+description = "visualize audio on an Arduino using cava"
 date = "2023-04-03"
 +++
 

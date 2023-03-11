@@ -1,5 +1,6 @@
 +++
-title = "wn2: WeeChat notification plugin"
+title = "wn2"
+description = "WeeChat notification plugin"
 date = "2022-10-20"
 +++
 

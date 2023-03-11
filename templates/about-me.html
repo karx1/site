@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-align-center">
+    <h1 class="header">{% block title %}{{ section.title }}{% endblock title %}</h1>
+    {{ section.description }}
+</div>
+
+{{ section.content | safe }}
+
+{% endblock content %}

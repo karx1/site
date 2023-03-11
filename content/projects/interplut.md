@@ -1,5 +1,6 @@
 +++
-title = "interplut: interpolated lookup table"
+title = "interplut"
+description = "interpolated lookup table"
 date = "2023-02-20"
 +++
 

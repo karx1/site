@@ -1,5 +1,6 @@
 +++
 title = "How to manually update Discord on Arch Linux"
+description = "must be your lucky day, there's a new update!"
 date = "2022-10-26"
 +++
 

@@ -1,14 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}Welcome to Yash's website!{% endblock title %}
-
 {% block content %}
-<h1 class="text-align-center">
-	Welcome to Yash's website!
+<div class="text-align-center">
+<h1 class="header">
+    {% block title %}Hi, I'm karx{% endblock title %}
 </h1>
-<p>
-	Hello there! My name is Yash Karandikar. I am a programmer and Linux enthusiast, as well as an avid Doctor Who fan.
-</p>
+programmer, linux enthusiast, avid Doctor Who fan.
+</div>
 
 <p>
 Skills:
@@ -23,8 +21,8 @@ Skills:
 <p>
 Stuff:
 <ul>
-    <li><a href="ircs://karx.xyz:6697">IRC: karx.xyz/6697 (requires SSL)</a></li>
-	<li>E-mail: <a href="mailto:yash@karx.xyz">yash@karx.xyz</a> [<a href="/signature.asc">GPG Signature</a>]</li>
+    <li>IRC: <a href="ircs://karx.xyz:6697">karx.xyz/6697 (requires SSL)</a></li>
+	<li>E-mail: <a href="mailto:yash@karx.xyz">yash@karx.xyz</a></li>
 </ul>
 </p>
 <p>
@@ -42,6 +40,6 @@ Friends:
     <li><a href="https://famfo.xyz">famfo</a></li>
     <li><a href="https://missingpiece.dev">missing</a></li>
     <li><a href="https://www.gallant.lol/">gallant</a></li>
-</ul>    
+</ul>
 </p>
 {% endblock content %}

@@ -1,5 +1,6 @@
 +++
-title = "cat-box: game engine inspired by arcade"
+title = "cat-box"
+description = "game engine inspired by arcade"
 date = "2022-06-24"
 +++
 

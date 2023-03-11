@@ -1,5 +1,6 @@
 +++
-title = "dircord: A Discord-IRC bridge written in Rust."
+title = "dircord"
+description = "A Discord-IRC bridge written in Rust"
 date = "2022-06-24"
 +++
 

@@ -3,12 +3,15 @@
 {% block title %}{{section.title}}{% endblock title %}
 
 {% block content %}
-<h1>
+<div class="text-align-center">
+<h1 class="header">
 	{{ section.title }}
 </h1>
+things I make
+</div>
 <ul>
 	{% for page in section.pages %}
-	<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+    <li><a href="{{ page.permalink | safe }}">{{ page.title }}: {{ page.description }}</a></li>
 	{% endfor %}
 </ul>
 {% endblock content %}
