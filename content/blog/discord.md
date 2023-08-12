@@ -8,7 +8,9 @@ Discord updates can be annoying, especially if you're not on Windows or a Debian
 
 Arch Linux, on the other hand, distributes Discord through its `community` repository. When an update rolls around, though, usually it takes a while for the package maintainer to push an update. For platforms like this, Discord shows a "helpful" message, leaving users to figure it out on their own.
 
-{{ img(src="/imgs/2022-10-26_08-37.png", caption="Message shown when Discord needs to be updated") }}
+{% img(src="/imgs/2022-10-26_08-37.png") %}
+Message shown when Discord needs to be updated
+{% end %} 
 
 Fortunately though, there's a solution.
 

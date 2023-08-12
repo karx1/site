@@ -1,4 +1,10 @@
 <figure>
-    <img src="{{ src }}" alt="{{ caption }}">
-    <figcaption>{{ caption | markdown(inline=true) | safe }}</figcaption>
+    <img src="{{ src }}" 
+{% if alt %}
+         alt="{{ alt }}"
+{% else %}
+         alt="{{ body | safe }}"
+{% endif %}
+    >
+    <figcaption>{{ body | markdown(inline=true) | safe }}</figcaption>
 </figure>
