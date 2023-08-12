@@ -29,6 +29,41 @@
         data-lang="en"
         data-loading="lazy"
         crossorigin="anonymous"
-        async>
+        async
+        data-reload>
 </script>
 {% endblock content %}
+
+{% block headext %}
+<script data-reload>
+    // handler for pages loaded through flamethrower
+    function handleMessage(event) {
+        if (event.origin !== 'https://giscus.app') return;
+        if (!(typeof event.data === 'object' && event.data.giscus)) return;
+
+        const giscusData = event.data.giscus;
+        if ('error' in giscusData) {
+            if (giscusData.error.includes("not installed")) {
+                console.log("Hello from handler " + giscusData.error);
+                sendMessage({
+                    setConfig: {
+                        repo: "karx1/site-comments",
+                        theme: "cobalt",
+                    }
+                })
+            }
+        }
+    }
+
+    function sendMessage(message) {
+        const iframe = document.querySelector("iframe.giscus-frame");
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, "*");
+        console.log("Sent message to giscus");
+    }
+
+
+    window.removeEventListener('message', handleMessage); // remove any old event listeners
+    window.addEventListener('message', handleMessage);
+</script>
+{% endblock headext %}

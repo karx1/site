@@ -12,6 +12,13 @@
     <meta property="og:image" content="https://karx.xyz/favicon.ico" />
 
     <title>{% block title %} {% endblock title %} - karx's website</title>
+
+    <script type="module">
+        import flamethrower from "https://esm.sh/v90/flamethrower-router";
+        flamethrower({log: true, pageTransitions: true});
+    </script>
+
+    {% block headext %} {% endblock headext %}
 </head>
 
 <body>
