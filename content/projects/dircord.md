@@ -23,4 +23,4 @@ target/release/dircord /path/to/config.toml
 If a path to a config file is not provided, dircord will look for a `config.toml` in the working directory.
 
 Links:
-- [Source code](https://git.karx.xyz/karx/dircord)
+- [Source code](https://github.com/karx1/dircord)
