@@ -5,14 +5,18 @@
 {% block content %}
 <div class="text-align-center">
 <h1 class="header">
-	{{ page.title }}
+    {{ page.title }}
 </h1>
 {{ page.description }}
 </div>
 <p class="text-align-right">
 <strong><i>
-		{{ page.date }}
-	</i></strong>
+        Written {{ page.date }}
+        <br>
+    {% if page.updated %}
+    Updated on {{ page.updated }}
+    {% endif %}
+    </i></strong>
 </p>
 {{ page.content | safe }}
 <script src="https://giscus.app/client.js"

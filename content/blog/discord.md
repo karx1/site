@@ -2,6 +2,7 @@
 title = "How to manually update Discord on Arch Linux"
 description = "must be your lucky day, there's a new update!"
 date = "2022-10-26"
+updated = "2024-07-29"
 +++
 
 Discord updates can be annoying, especially if you're not on Windows or a Debian-based Linux distribution. This is because Discord ships their own `.deb` files and is not distributed through a repository.
@@ -10,7 +11,7 @@ Arch Linux, on the other hand, distributes Discord through its `community` repos
 
 {% img(src="/imgs/2022-10-26_08-37.png") %}
 Message shown when Discord needs to be updated
-{% end %} 
+{% end %}
 
 Fortunately though, there's a solution.
 
@@ -34,7 +35,7 @@ Now, edit `resources/build_info.json` with your favorite text editor. It should 
 }
 ```
 
-Update the `version` field to the current version of Discord (0.0.21 as of October 26th, 2022).
+Update the `version` field to the current version of Discord (0.0.61 as of July 29th, 2024).
 
 ### The `PKGBUILD` way
 
@@ -45,23 +46,28 @@ Make sure you know how to build and install [AUR](https://aur.archlinux.org/) pa
 If you don't like editing configuration files to update things, you can also download the package's `PKGBUILD` and build the package yourself. This involves using the [Arch Build System](https://wiki.archlinux.org/title/Arch_Build_System). This method is also useful if you want to build the package on one machine and transfer it to another machine.
 
 
-To get started, install the `asp` package through pacman. This will let you download a PKGBUILD from the Arch repository.
+To get started, install the `devtools` package:
+
+```sh
+sudo pacman -S devtools
+```
+
+This will add the `pkgctl` command to your system, which will let you download `PKGBUILD` files from the Arch Linux repositories.
 
 Now, export the current `PKGBUILD` for the `discord` package:
 
 ```sh
-asp export discord
-# Output - ==> exporting discord:trunk
+pkgctl repo clone --protocol=https discord
 ```
 
-This will create a `discord` directory inside your working directory. Enter this directory and you will see a PKGBUILD. It should look like this (some contents omitted):
+This will create a `discord` directory inside your working directory. Enter this directory and you will see a PKGBUILD. It should look something like this (some contents omitted):
 
 ```sh
 pkgname=discord
 _pkgname=Discord
 pkgver=0.0.xx
 pkgrel=1
-pkgdesc="All-in-one voice and text chat for gamers that's free and secure."
+pkgdesc="All-in-one voice and text chat for gamers"
 
 # ...
 
@@ -74,13 +80,13 @@ package() {
 }
 ```
 
-Update the `pkgver` field to the current version of Discord (0.0.21 as of October 26th, 2022). Then, build the package as you would an AUR package:
+Update the `pkgver` field to the current version of Discord (0.0.61 as of July 29th, 2024). Then, build the package as you would build an AUR package:
 
 ```sh
 makepkg -si
 ```
 
-Now the updated package should be installed.
+Now, the updated package should be installed. Simply repeat this process every time you get the update message.
 
 ### Epilogue
 
@@ -93,4 +99,4 @@ Once the updated version is finally pushed to the repository, you should be able
  - [Arch Build System - ArchWiki](https://wiki.archlinux.org/title/Arch_Build_System#Retrieve_PKGBUILD_source)
  - [Discord - ArchWiki](https://wiki.archlinux.org/title/Discord#Discord_asks_for_an_update_not_yet_available_in_the_repository)
 
-As always, if you have any questions, feel free to [shoot me an email](mailto:yash@karx.xyz)!
+As always, if you have any questions, feel free to contact me!
