@@ -1,4 +1,4 @@
 #! /bin/bash
 git pull
 zola build
-minify --recursive public/
+minify -r -a -o public/ public
