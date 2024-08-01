@@ -14,4 +14,4 @@ These days I mainly code in Rust, although I have been using Java for use in the
 
 This site was created with a static site generator called [Zola](https://www.getzola.org/), and it is hosted on Oracle Cloud's free tier. I used to host it on my own server, but since I'm in college now I had to shut off my network. 
 
-The site aims to be readable and usable even without JavaScript. The only JavaScript that I used is the [utterances](https://utteranc.es/) framework that I use for blog comments, and Fireship's [flamethrower router](https://github.com/fireship-io/flamethrower). Even without these, though, the site can still be used, so feel free to disable JavaScript on my website.
+The site aims to be readable and usable even without JavaScript. The only JavaScript that I used is the [utterances](https://utteranc.es/) framework that I use for blog comments, Fireship's [flamethrower router](https://github.com/fireship-io/flamethrower), and a script on the homepage to hide my email from bots. Even without these, though, the site can still be used, so feel free to disable JavaScript on my website.
