@@ -1,109 +1,116 @@
 .container {
-	/*Text margin*/
-	margin: auto;
-	width: 75%;
-	padding: 10px;
+  /*Text margin*/
+  margin: auto;
+  width: 75%;
+  padding: 10px;
 }
 
 body {
-	font-family: 'Ubuntu', sans-serif;
-    background-color: #003B6F; // Fallback
-	background: linear-gradient(180deg, #003B6F, black);
-	color: white;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	filter: drop-shadow(2px 2px 2px black);
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #003B6F; // Fallback
+  background: linear-gradient(180deg, #003B6F, black);
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: drop-shadow(2px 2px 2px black);
 }
 
 $linkcolor: #c256ff;
 
 @mixin linkstyle {
-	color: $linkcolor;
-	filter: none;
+  color: $linkcolor;
+  filter: none;
 }
 
 a:link {
-	@include linkstyle;
+  @include linkstyle;
 }
 
 a:visited {
-	@include linkstyle;
+  @include linkstyle;
 }
 
 a:hover {
-	@include linkstyle;
-	color: white;
+  @include linkstyle;
+  color: white;
 }
 
 a:active {
-	@include linkstyle;
+  @include linkstyle;
 }
 
 hr { background-color: white; height: 1px; border: 0; }
 
 pre {
-	padding: 1em;
-	border: 0.5em;
-	overflow-x: auto;
+  padding: 1em;
+  border: 0.5em;
+  overflow-x: auto;
 }
 
 code {
-    font-family: monospace;
-    background-color: #2e3440;
-    padding: 0.1em 0.2em;
+  font-family: monospace;
+  background-color: #2e3440;
+  padding: 0.1em 0.2em;
 }
 
 pre code {
-    padding-left: 0;
-    background-color: unset;
+  padding-left: 0;
+  background-color: unset;
 }
 
 .warning {
-    background-color: indianred;
-    padding: 1em;
+  background-color: indianred;
+  padding: 1em;
 }
 
 .warning::before {
-    content: '⚠ ';
+  content: '⚠ ';
 }
 
 .info {
-    background-color: #1f44b4;
-    padding: 1em;
+  background-color: #1f44b4;
+  padding: 1em;
 }
 
 .info::before {
-    content: "ℹ "	
+  content: "ℹ ";
 }
 
 // images
 
 figure {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 figure img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 figcaption {
-    text-align: right;
-    font-size: smaller;
-    font-style: italic;
-    color: #777;
+  text-align: right;
+  font-size: smaller;
+  font-style: italic;
+  color: #777;
 }
 
 .text-align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-align-right {
-    text-align: right;
+  text-align: right;
 }
 
 .header {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
+.back-button::before {
+  content: "< ";
+}
+
+.back-button {
+  float: left;
+}
