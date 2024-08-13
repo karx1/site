@@ -12,5 +12,5 @@ Feel free to leave an issue or pull request if a feature that you need is missin
 
 Links:
 - [Source Code](https://github.com/karx1/multitag)
-- Crates.io link coming soon!
+- [crates.io](https://crates.io/crates/multitag)
 
