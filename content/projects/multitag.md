@@ -8,6 +8,18 @@ date = "2024-08-11"
 
 This library was created for [`crabtagger`](/projects/crabtagger) and intends to replace the existing `audiotags` crate, which I personally saw some issues with (specifically, lack of `.wav` support and some non-idiomatic Rust practices).
 
+To add multitag to your project, simply run:
+```sh
+cargo add multitag
+```
+
+Or, add the following line to your `Cargo.toml`, with the desired version:
+```toml
+[dependencies]
+multitag = "<version>"
+```
+
+
 Feel free to leave an issue or pull request if a feature that you need is missing from the crate!
 
 Links:
